@@ -1,6 +1,6 @@
 // Select color input
 // Select size input
-let tbWidth, tbHeight;
+let tbWidth, tbHeight, tdcolor;
 // When size is submitted by the user, call makeGrid()
 $('#sizePicker').on('submit', function(event){
     event.preventDefault();
@@ -10,18 +10,18 @@ $('#sizePicker').on('submit', function(event){
     });
 /**
 * @description Perform the for loops code
-* @param {tbHeight} x
-* @param {tbWidth} y
+* @param {tbHeight} n
+* @param {tbWidth} m
 * @returns {tbHeight, tbWidth} loop through x and y
 */
-function makeGrid(x,y) {
+function makeGrid(n,m) {
    
 // Your code goes here!
 // This clear and create the grid dynamically.
 $('tr').remove();
-for (i=1;i<=x; i++){
+for (i=1;i<=n; i++){
    $('#pixelCanvas').append('<tr id=table'+ i +'></tr>');
-   for(j=1;j<=y;j++){
+   for(j=1;j<=m;j++){
        $('tr:last').append('<td></td>');
    }
 }
@@ -35,3 +35,4 @@ $('td').click(function addColor(){
 }
 });
 }
+

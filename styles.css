@@ -1,20 +1,25 @@
 body {
     text-align: center;
+    font-family: NotoSansJP, Slack-Lato, appleLogo, sans-serif;
 }
 
+    
+
 h1 {
-    font-family: Monoton;
     font-size: 70px;
     margin: 0.2em;
 }
+
 
 h2 {
     margin: 1em 0 0.25em;
 }
 
+
 h2:first-of-type {
     margin-top: 0.5em;
 }
+
 
 table,
 tr,
@@ -22,28 +27,31 @@ td {
     border: 1px solid black;
 }
 
+
 table {
     border-collapse: collapse;
     margin: 0 auto;
-    background-color: burlywood;
 }
+
 
 tr {
     height: 20px;
 }
 
+
 td {
     width: 20px;
 }
 
+
 input[type=number] {
-    width: 6em;
+    width: 12em;
+    height: 2em;
 }
+
+
 input[type=submit] {
-    width: 120px;
-    height: 30px;
-    background-color: rgb(87, 81, 97);
-    border: 0px;
-    border-radius: 2px;
-    cursor: pointer; 
+    width: 12em;
+    height: 3em;
+    cursor: pointer;
 }
